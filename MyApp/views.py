@@ -10,11 +10,14 @@ def index(request):
    # return HttpResponse('This is HomePage')
 
 def about(request):
-    return HttpResponse('This is About Page')
+    return render(request, 'about.html')
+    #return HttpResponse('This is About Page')
 
 def services(request):
-    return HttpResponse('This is Services Page')
+    return render(request, 'services.html')
+    #return HttpResponse('This is Services Page')
 
 def contact(request):
-    return HttpResponse('This is Contact Page')
+    return render(request, 'contact.html')
+    #return HttpResponse('This is Contact Page')
 
